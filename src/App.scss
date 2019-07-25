@@ -1,0 +1,86 @@
+.App {
+    text-align: center;
+    margin-top: 80px;
+    .button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        &:hover {
+            background-color: #3e8e41
+        }
+        &:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    }
+    .userDetails-wrapper {
+        width: 35%;
+        margin: 0 auto;
+        text-align: center;
+        transform: translateY(-130%);
+        animation: myMove 2s forwards;
+        .details-wrapper {
+            background-color: #FF704C;
+            padding: 50px;
+            .name {
+                font-size: 25px;
+                color: #fff;
+                padding-top: 15px;
+            }
+            .image {
+                width: 100px;
+                text-align: center;
+                margin: 0 auto;
+                img {
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+            .logout-button {
+                float: right;
+                margin-top: -30px;
+                display: inline-block;
+                padding: 5px 15px;
+                font-size: 20px;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                border: none;
+                border-radius: 5px;
+                background-color: #000;
+                color: #fff;
+            }
+        }
+        .bar {
+            width: 10px;
+            height: 155px;
+            background-color: red;
+            margin: 0 auto;
+        }
+        .stand {
+            width: 200px;
+            height: 100px;
+            background-color: green;
+            margin: 0 auto;
+        }
+    }
+}
+
+@keyframes myMove {
+    0% {
+        transform: translateY(-130%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
