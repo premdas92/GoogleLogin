@@ -25,7 +25,7 @@ class App extends React.Component {
       <div className="App">
         {!this.state.isUserLoggedIn && (
           <GoogleLogin
-            clientId="269203047608-nket5dj96lnf0fpt5ds19gad0u59qi6h.apps.googleusercontent.com"
+            clientId="" //TO BE CREATED
             render={renderProps => (
               <button
                 className="button"
